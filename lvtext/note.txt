@@ -1,0 +1,2 @@
+¦w¸Ë
+composer create-project laravel/laravel example-app
