@@ -1,0 +1,43 @@
+前往composer官網下載composer
+
+測試composer -v 成功往下一步 如果沒成功 查看環境變數是否有設置好
+
+建立laravle專案:
+前往想建立專案的資料夾目錄下 其中example-app為預設專案資料夾名稱 可以改為自己的專案名稱
+安裝指令 
+composer create-project laravel/laravel example-app
+
+php artisan serve 啟動伺服器(預設為PORT號8000)
+
+
+php artisan migrate 連線資料庫
+
+
+php artisan make:controller CarController --resource 建立控制器 --resource用途是有更多資源(例如:CRUD)
+
+在route中設置
+use App\Http\Controllers\CarController;
+ 
+Route::resource('cars', CarController::class);
+
+
+php artisan route:list 顯示路由
+
+------------------
+從github上還原laravel專案流程如下
+
+先將專案clone下來
+
+在該專案目錄下重新下載composer
+composer install
+
+複製.env的範例檔成為.env檔案
+cp .env.example .env
+
+檢查.env檔案中的資料庫設定
+.env db mysql setting
+
+產生鑰匙
+php artisan key:generate
+
+xampp documentRoot
