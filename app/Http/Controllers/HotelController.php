@@ -3,40 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use PhpParser\Node\Expr\FuncCall;
 
-class CarController extends Controller
+class HotelController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-
-
-        $data = [
-            [
-                'id' => 1,
-                'name' => 'Acar',
-                'color' => 'red',
-                'speed' => '100km'
-            ],
-            [
-                'id' => 2,
-                'name' => 'Bcar',
-                'color' => 'blue',
-                'speed' => '90km'
-            ],
-            [
-                'id' => 3,
-                'name' => 'Ccar',
-                'color' => 'yellow',
-                'speed' => '80km'
-            ],
-
-        ];
-
-        return view('car.index', ['cars' => $data]);
+        return view('hotel.index');
     }
 
     /**
@@ -45,7 +20,6 @@ class CarController extends Controller
     public function create()
     {
         //
-        echo "FUCK";
     }
 
     /**
@@ -69,7 +43,7 @@ class CarController extends Controller
      */
     public function edit(string $id)
     {
-        return view('car.edit', ['carnum' => $id]);
+        //
     }
 
     /**
@@ -88,8 +62,19 @@ class CarController extends Controller
         //
     }
 
-    public function excel()
+    public function F1()
     {
-        echo "EXCEL DONE";
+        // dd("F1");
+        return view('hotel.F1');
+    }
+
+    public function F2()
+    {
+        return view('hotel.F2');
+    }
+
+    public function F3()
+    {
+        return view('hotel.F3');
     }
 }
