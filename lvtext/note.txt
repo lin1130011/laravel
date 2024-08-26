@@ -10,7 +10,7 @@ composer create-project laravel/laravel example-app
 php artisan serve 啟動伺服器(預設為PORT號8000)
 
 
-php artisan migrate 連線資料庫
+php artisan migrate 將database/migrations的內容搬移至資料庫中
 
 php artisan make:migration create_flights_table >>建立資料表(範例)
 
