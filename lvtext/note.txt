@@ -21,6 +21,10 @@ php artisan migrate:rollback >>還原上一動 可以查看資料庫中這個migrations資料表的
 
 php artisan make:controller CarController --resource 建立控制器 --resource用途是有更多資源(例如:CRUD)
 
+php artisan make:model Student >>建立資料表模型 如果資料表名稱有依照規範使用students 建立model時直接將首字母大寫取消負數 就可以將資料表的內容映射過來
+
+
+
 在route中設置
 use App\Http\Controllers\CarController;
  
