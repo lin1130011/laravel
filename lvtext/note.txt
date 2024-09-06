@@ -51,3 +51,8 @@ cp .env.example .env
 php artisan key:generate
 
 xampp documentRoot
+
+------------------------------------
+laravel excel
+
+參考網站https://docs.laravel-excel.com/3.1/getting-started/installation.html
